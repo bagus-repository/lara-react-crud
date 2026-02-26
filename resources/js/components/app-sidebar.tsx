@@ -4,19 +4,29 @@ import { NavUser } from '@/components/nav-user';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid, PackageSearch } from 'lucide-react';
+import { BookOpen, Folder, FolderArchive, LayoutGrid, PackageSearch, Tickets } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
     {
-        title: 'Dashboard',
+        title: 'Beranda',
         href: '/dashboard',
         icon: LayoutGrid,
     },
+    // {
+    //     title: 'Products',
+    //     href: '/products',
+    //     icon: PackageSearch,
+    // },
     {
-        title: 'Products',
-        href: '/products',
-        icon: PackageSearch,
+        title: 'Category',
+        href: '/categories',
+        icon: FolderArchive,
+    },
+    {
+        title: 'Tiket',
+        href: '/tickets',
+        icon: Tickets,
     },
 ];
 

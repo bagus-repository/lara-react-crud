@@ -1,6 +1,12 @@
 import { LucideIcon } from 'lucide-react';
 import type { Config } from 'ziggy-js';
 
+export * from './models/Category';
+export * from './models/Ticket';
+export * from './enums/Tag';
+export * from './enums/TicketPriority';
+export * from './enums/TicketStatus';
+
 export interface Auth {
     user: User;
 }
@@ -33,6 +39,7 @@ export interface SharedData {
 export interface User {
     id: number;
     name: string;
+    username: string;
     email: string;
     avatar?: string;
     email_verified_at: string | null;
